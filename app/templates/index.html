@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Fast Sy</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="text-indigo-600">Books</h1>
+      <section>
+        {% for book in books %}
+        <div class="mb-2">
+          <h2 class="text-blue-400">{{ book.title }}</h2>
+          <p>{{ book.author }}</p>
+          <p>{{ book.description }}</p>
+        </div>
+        {% endfor %}
+      </section>
+    </main>
+  </body>
+</html>
