@@ -11,7 +11,7 @@ class BookBase(BaseModel):
 
 
 # Used when submitting a book via POST requests
-class BookCreate(BaseModel):
+class BookCreate(BookBase):
     title: str
     authors: Sequence[AuthorCreate]
     year: int
@@ -34,6 +34,10 @@ class BookDB(BaseModel):
 
 
 class Book(BookDB):
+    pass
+
+
+class BookUpdate(BookBase):
     pass
 
 

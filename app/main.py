@@ -1,6 +1,6 @@
 from fastapi import FastAPI, APIRouter, Request
 from typing import Optional
-from schemas.book import Book, BookCreate
+from app.schemas import Book, BookCreate
 from app.books import BOOKS
 from app.authors import AUTHORS
 from app.helpers import createAuthor

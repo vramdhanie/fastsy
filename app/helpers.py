@@ -1,5 +1,5 @@
 from app.authors import AUTHORS
-from schemas.book import AuthorCreate, Author
+from app.schemas import AuthorCreate, Author
 
 
 def createAuthor(author: AuthorCreate) -> dict:

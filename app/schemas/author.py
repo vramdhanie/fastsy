@@ -18,3 +18,7 @@ class Author(AuthorDB):
 
 class AuthorCreate(AuthorBase):
     pass
+
+
+class AuthorUpdate(AuthorBase):
+    pass
