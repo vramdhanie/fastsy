@@ -1,6 +1,7 @@
 import logging
 from tenacity import before_sleep_log, after_log, retry, stop_after_attempt, wait_fixed
-from app.db.session import SessionLocal
+from db.session import SessionLocal
+from sqlalchemy.sql import text
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -18,7 +19,7 @@ wait_seconds = 1
 def init() -> None:
     try:
         db = SessionLocal()
-        db.execute("SELECT 1")
+        db.execute(text("SELECT 1"))
     except Exception as e:
         logger.error(e)
         raise e

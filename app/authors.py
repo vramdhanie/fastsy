@@ -1,1 +1,84 @@
-AUTHORS = []
+AUTHORS = [{
+    "id": 1,
+    "first_name": "John",
+    "last_name": "Doe",
+}, {
+    "id": 2,
+    "first_name": "Jane",
+    "last_name": "Doe",
+}, {
+    "id": 3,
+    "first_name": "Alice",
+    "last_name": "Smith",
+}, {
+    "id": 4,
+    "first_name": "Bob",
+    "last_name": "Smith",
+}, {
+    "id": 5,
+    "first_name": "Charlie",
+    "last_name": "Brown",
+}, {
+    "id": 6,
+    "first_name": "Lucy",
+    "last_name": "Brown",
+}, {
+    "id": 7,
+    "first_name": "Tom",
+    "last_name": "Thumb",
+}, {
+    "id": 8,
+    "first_name": "Jerry",
+    "last_name": "Mouse",
+}, {
+    "id": 9,
+    "first_name": "Mickey",
+    "last_name": "Mouse",
+}, {
+    "id": 10,
+    "first_name": "Donald",
+    "last_name": "Duck",
+}, {
+    "id": 11,
+    "first_name": "Daffy",
+    "last_name": "Duck",
+}, {
+    "id": 12,
+    "first_name": "Elmer",
+    "last_name": "Fudd",
+}, {
+    "id": 13,
+    "first_name": "Bugs",
+    "last_name": "Bunny",
+}, {
+    "id": 14,
+    "first_name": "Porky",
+    "last_name": "Pig",
+}, {
+    "id": 15,
+    "first_name": "Sylvester",
+    "last_name": "Cat",
+}, {
+    "id": 16,
+    "first_name": "Tweety",
+    "last_name": "Bird",
+}, {
+    "id": 17,
+    "first_name": "Speedy",
+    "last_name": "Gonzales",
+}, {
+    "id": 18,
+    "first_name": "Yosemite",
+    "last_name": "Sam",
+}, {
+    "id": 19,
+    "first_name": "Foghorn",
+    "last_name": "Leghorn",
+}, {
+    "id": 20,
+    "first_name": "Marvin",
+    "last_name": "Martian",
+}, {
+    "id": 21,
+    "first_name": "Pepe",
+}]

@@ -1,9 +1,9 @@
-from app.db.base_class import Base
+from db.base_class import Base
 from sqlalchemy import Column, Integer, String, ForeignKey
-from sqlalchemy.orm import relationship
-from typing import List, Mapped
-from app.models.author import Author
-from app.models.book_author import book_author
+from sqlalchemy.orm import relationship, Mapped
+from typing import List
+from models.author import Author
+from models.book_author import book_author
 
 
 class Book(Base):

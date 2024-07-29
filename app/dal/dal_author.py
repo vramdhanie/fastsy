@@ -1,10 +1,10 @@
-from app.dal.base import DALBase
-from app.models.user import User
-from app.schemas.user import UserCreate, UserUpdate
+from dal.base import DALBase
+from models.author import Author
+from schemas.author import AuthorCreate, AuthorUpdate
 
 
-class DALUser(DALBase[User, UserCreate, UserUpdate]):
+class DALAuthor(DALBase[Author, AuthorCreate, AuthorUpdate]):
     pass
 
 
-user = DALUser(User)
+author = DALAuthor(Author)

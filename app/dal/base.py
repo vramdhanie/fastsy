@@ -1,6 +1,6 @@
 from typing import Type, Generic, List, TypeVar, Optional, Union, Dict, Any
 
-from app.db.base_class import Base
+from db.base_class import Base
 
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
@@ -24,7 +24,7 @@ class DALBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
         return db.query(self.model).offset(skip).limit(limit).all()
 
     def create(self, db: Session, obj_in: CreateSchemaType) -> ModelType:
-        obj = self.model(**obj_in.dict())
+        obj = self.model(**obj_in)
         db.add(obj)
         db.commit()
         db.refresh(obj)
