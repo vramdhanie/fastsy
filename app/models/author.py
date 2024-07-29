@@ -1,7 +1,7 @@
-from db.base_class import Base
+from app.db.base_class import Base
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship, Mapped
-from models.book_author import book_author
+from .book_author import book_author
 from typing import List
 
 
