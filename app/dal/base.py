@@ -1,6 +1,6 @@
 from typing import Type, Generic, List, TypeVar, Optional, Union, Dict, Any
 
-from db.base_class import Base
+from app.db.base import Base
 
 from pydantic import BaseModel
 from sqlalchemy.orm import Session

@@ -78,7 +78,4 @@ AUTHORS = [{
     "id": 20,
     "first_name": "Marvin",
     "last_name": "Martian",
-}, {
-    "id": 21,
-    "first_name": "Pepe",
 }]

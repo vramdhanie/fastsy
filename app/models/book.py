@@ -1,4 +1,4 @@
-from app.db.base_class import Base
+from app.db.base import Base
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship, Mapped
 from typing import List
@@ -11,5 +11,3 @@ class Book(Base):
     title = Column(String(256), index=True, nullable=False)
     year = Column(Integer, index=True, nullable=False)
     description = Column(String(1024), nullable=True)
-    authors: Mapped[List[Author]] = relationship(
-        "Author", secondary=book_author, back_populates="books")

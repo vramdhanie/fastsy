@@ -1,5 +1,5 @@
 from app.db.session import SQLALCHEMY_DATABASE_URL
-from app.db import Base
+from app.db.base import Base
 from logging.config import fileConfig
 
 from sqlalchemy import engine_from_config

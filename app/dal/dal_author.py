@@ -1,6 +1,6 @@
-from dal.base import DALBase
-from models.author import Author
-from schemas.author import AuthorCreate, AuthorUpdate
+from app.dal.base import DALBase
+from app.models.author import Author
+from app.schemas.author import AuthorCreate, AuthorUpdate
 
 
 class DALAuthor(DALBase[Author, AuthorCreate, AuthorUpdate]):
